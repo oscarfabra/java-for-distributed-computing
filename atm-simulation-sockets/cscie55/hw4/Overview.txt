@@ -1,0 +1,44 @@
+TITLE: Solution for Homework # 4
+COURSE: CSCIE E-55, "Java for Distributed Computing", Fall 2013
+AUTHOR: Oscar Fabra, fabrasuarez@g.harvard.edu
+DATE: November 28, 2013
+
+ASSUMPTIONS:
+
+ * Solution was developed following step by step the spec given at the course 
+   website.
+ * All assumptions made during the programming assignment were Javadoc-
+   documented in their respective Java source files. Please see each of the 
+   Java source files listed above.
+
+HOW TO USE ANT:
+
+The default target compiles all the sources, puts the resulting .class files in
+a different directory and builds the jar file from these files.
+# ant -buildfile hw4-build.xml
+
+To run all the created jUnit test cases, first be sure to execute the Server,
+then run the tests on a different command prompt.
+# ant -buildfile hw4-build.xml run-server
+# ant -buildfile hw4-build.xml run-tests
+
+To clean the generated class files.
+# ant -buildfile hw4.build.xml clean
+
+HOW TO EXECUTE MAIN PROCESSES:
+
+Be sure to execute the Server and then the Client on a different command
+prompt.
+# java -classpath hw4.jar cscie55.hw4.Server 7777
+# java -classpath hw4.jar cscie55.hw4.Client localhost 7777
+
+HOW TO EXECUTE TESTS:
+
+AccountTest and ATMImplementationTest can be run without any prior action.
+# java -classpath hw4.jar cscie55.hw4.tests.AccountTest
+# java -classpath hw4.jar cscie55.hw4.tests.ATMImplementationTest
+
+But be sure to execute the Server and then the ATMProxyTest on a different
+command prompt.
+# java -classpath hw4.jar cscie55.hw4.Server 7777
+# java -classpath hw4.jar cscie55.hw4.ATMProxyTest localhost 7777

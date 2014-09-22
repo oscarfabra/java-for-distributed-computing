@@ -1,0 +1,48 @@
+Security manager installed.
+Java RMI registry located.
+Client registered with ATM as ATMListener.
+
+TransactionNotification: INQUIRE, Account: 1
+Balance(0000001): 0.0
+TransactionNotification: INQUIRE, Account: 2
+Balance(0000002): 100.0
+TransactionNotification: INQUIRE, Account: 3
+Balance(0000003): 500.0
+
+TransactionNotification: INQUIRE, Account: 1
+Test one failed as expected: java.rmi.ServerException: RemoteException occurred in server thread; nested exception is: 
+	cscie55.project.exceptions.ATMException: Balance couldn't be retrieved.
+
+TransactionNotification: WITHDRAW, Account: 2, Amount: 500.0
+Test two failed as expected: java.rmi.ServerException: RemoteException occurred in server thread; nested exception is: 
+	cscie55.project.exceptions.ATMException: Withdrawal couldn't be made.
+
+TransactionNotification: WITHDRAW, Account: 1, Amount: 50.0
+Test three failed as expected: java.rmi.ServerException: RemoteException occurred in server thread; nested exception is: 
+	cscie55.project.exceptions.ATMInsufficientFundsException: Insufficient funds to make the transaction.
+
+TransactionNotification: DEPOSIT, Account: 1, Amount: 500.0
+Test four performed successfully.
+
+TransactionNotification: DEPOSIT, Account: 2, Amount: 100.0
+Test five performed successfully.
+
+TransactionNotification: WITHDRAW, Account: 1, Amount: 100.0
+Test six performed successfully.
+
+TransactionNotification: WITHDRAW, Account: 3, Amount: 300.0
+Test seven performed successfully.
+
+TransactionNotification: WITHDRAW, Account: 1, Amount: 200.0
+Test eight failed as expected: java.rmi.ServerException: RemoteException occurred in server thread; nested exception is: 
+	cscie55.project.exceptions.ATMException: Withdrawal couldn't be made.
+
+TransactionNotification: TRANSFER, Account 1: 1Account 2: 2, Amount: 100.0
+Test nine performed successfully.
+
+TransactionNotification: INQUIRE, Account: 1
+Balance(0000001): 300.0
+TransactionNotification: INQUIRE, Account: 2
+Balance(0000002): 300.0
+TransactionNotification: INQUIRE, Account: 3
+Balance(0000003): 200.0

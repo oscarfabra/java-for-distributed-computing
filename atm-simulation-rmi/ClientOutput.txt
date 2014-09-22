@@ -1,0 +1,19 @@
+Security manager installed.
+Java RMI registry located.
+
+Initial Balances
+Balance(1): 0.0
+Balance(2): 100.0
+Balance(3): 500.0
+
+Depositing(1): 1000
+Balance(1): 1000.0
+Withdrawing(2): 100 
+Balance(2): 0.0
+Depositing(3): 500 
+Balance(3): 1000.0
+
+Final Balances
+Balance(1): 1000.0
+Balance(2): 0.0
+Balance(3): 1000.0

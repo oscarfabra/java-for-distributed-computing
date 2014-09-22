@@ -1,0 +1,35 @@
+Connecting server socket to port...
+Server running on port 7777...
+Waiting for a client...
+Connected to a client...
+Attempting to read commands...
+---------------------------------------
+Command read: INQUIRE
+Running request in thread: 1
+Sending back: 0.0
+---------------------------------------
+Command read: DEPOSIT
+Running request in thread: 2
+Sending back: Success.
+---------------------------------------
+Command read: INQUIRE
+Running request in thread: 3
+Sending back: 1000.0
+---------------------------------------
+Command read: WITHDRAW
+Running request in thread: 4
+Sending back: Success.
+---------------------------------------
+Command read: INQUIRE
+Running request in thread: 5
+Sending back: 750.0
+---------------------------------------
+Command read: WITHDRAW
+Running request in thread: 6
+Sending back: Success.
+---------------------------------------
+Command read: INQUIRE
+Running request in thread: 7
+Sending back: 0.0
+
+Client disconnected from server.

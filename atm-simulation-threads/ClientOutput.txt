@@ -1,0 +1,23 @@
+Trying to connect to localhost:7777
+Established server connection.
+About to ask for account balance...
+Server returned: 0.0
+Balance: 0.0
+Depositing: 1000
+About to make deposit...
+Server returned: Success.
+About to ask for account balance...
+Server returned: 1000.0
+Balance: 1000.0
+Withdrawing: 250
+About to make withdrawal...
+Server returned: Success.
+About to ask for account balance...
+Server returned: 750.0
+Balance: 750.0
+Withdrawing: 750
+About to make withdrawal...
+Server returned: Success.
+About to ask for account balance...
+Server returned: 0.0
+Balance: 0.0

@@ -1,0 +1,4 @@
+Security manager installed.
+Java RMI registry already exists.
+Created new ATMImpl.
+ATMFactory bound in registry.

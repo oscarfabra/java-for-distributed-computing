@@ -1,0 +1,714 @@
+//-----------------------------------------------------------------
+// APPLICATION'S INITIAL VALUES
+//-----------------------------------------------------------------
+
+Number of Elevators: 3
+
+Elevators' Capacity: 7
+
+Number of Floors: 7
+
+Initial Number of Residents on Any Floor: 7
+
+Average Queue Arrivals Per Sec on Any Floor: 4
+
+
+//-----------------------------------------------------------------
+// ELEVATORS AND FLOORS' INITIAL VALUES
+//-----------------------------------------------------------------
+
+//--- GENERATING ARRIVALS, FLOOR 1 ---//
+Residing passengers that leave: 6
+Number of passengers destined up: 6
+Number of passengers destined down: 0
+
+
+//--- GENERATING ARRIVALS, FLOOR 2 ---//
+Residing passengers that leave: 3
+Number of passengers destined up: 2
+Number of passengers destined down: 1
+
+
+//--- GENERATING ARRIVALS, FLOOR 3 ---//
+Residing passengers that leave: 4
+Number of passengers destined up: 2
+Number of passengers destined down: 2
+
+
+//--- GENERATING ARRIVALS, FLOOR 4 ---//
+Residing passengers that leave: 2
+Number of passengers destined up: 1
+Number of passengers destined down: 1
+
+
+//--- GENERATING ARRIVALS, FLOOR 5 ---//
+Residing passengers that leave: 7
+Number of passengers destined up: 2
+Number of passengers destined down: 5
+
+
+//--- GENERATING ARRIVALS, FLOOR 6 ---//
+Residing passengers that leave: 3
+Number of passengers destined up: 0
+Number of passengers destined down: 3
+
+
+//--- GENERATING ARRIVALS, FLOOR 7 ---//
+Residing passengers that leave: 1
+Number of passengers destined up: 0
+Number of passengers destined down: 1
+
+
+//---------- FLOOR 1 VALUES ----------//
+Passengers residing (no destination): 1
+Passengers waiting for UP service: 6
+    Destination of passenger 1: 2
+    Destination of passenger 2: 7
+    Destination of passenger 3: 7
+    Destination of passenger 4: 7
+    Destination of passenger 5: 6
+    Destination of passenger 6: 6
+Passengers waiting for DOWN service: 0
+
+
+//---------- FLOOR 2 VALUES ----------//
+Passenger residing (no destination): 4
+Passengers waiting for UP service: 2
+    Destination of passenger 1: 3
+    Destination of passenger 2: 3
+Passenger waiting for DOWN service: 1
+    Destination of passenger 1: 1
+
+
+//---------- FLOOR 3 VALUES ----------//
+Passengers residing (no destination): 3
+Passengers waiting for UP service: 2
+    Destination of passenger 1: 5
+    Destination of passenger 2: 4
+Passengers waiting for DOWN service: 2
+    Destination of passenger 1: 1
+    Destination of passenger 2: 2
+
+
+//---------- FLOOR 4 VALUES ----------//
+Passenger residing (no destination): 5
+Passenger waiting for UP service: 1
+    Destination of passenger 1: 5
+Passenger waiting for DOWN service: 1
+    Destination of passenger 1: 1
+
+
+//---------- FLOOR 5 VALUES ----------//
+Passengers residing (no destination): 0
+Passengers waiting for UP service: 2
+    Destination of passenger 1: 6
+    Destination of passenger 2: 6
+Passengers waiting for DOWN service: 5
+    Destination of passenger 1: 2
+    Destination of passenger 2: 1
+    Destination of passenger 3: 3
+    Destination of passenger 4: 3
+    Destination of passenger 5: 2
+
+
+//---------- FLOOR 6 VALUES ----------//
+Passengers residing (no destination): 4
+Passengers waiting for UP service: 0
+Passengers waiting for DOWN service: 3
+    Destination of passenger 1: 1
+    Destination of passenger 2: 2
+    Destination of passenger 3: 4
+
+
+//---------- FLOOR 7 VALUES ----------//
+Passenger residing (no destination): 6
+Passengers waiting for UP service: 0
+Passenger waiting for DOWN service: 1
+    Destination of passenger 1: 3
+
+
+//-------- ELEVATOR 1 VALUES --------//
+Standing on floor: 1
+Passengers on board: 0
+
+//-------- ELEVATOR 2 VALUES --------//
+Standing on floor: 1
+Passengers on board: 0
+
+//-------- ELEVATOR 3 VALUES --------//
+Standing on floor: 1
+Passengers on board: 0
+
+
+
+//-----------------------------------------------------------------
+// MOVING ELEVATORS FOR 30 SECONDS (30 MOVES EACH)
+//-----------------------------------------------------------------
+
+//----- MOVING ELEVATOR 1, LOOP 1 ----//
+Current floor: 2...
+Stopping on floor 2...
+Currently 0 passengers on board.
+Loading 1 passenger...
+
+//----- MOVING ELEVATOR 2, LOOP 1 ----//
+Current floor: 2...
+Stopping on floor 2...
+Currently 0 passengers on board.
+Loading 1 passenger...
+
+//----- MOVING ELEVATOR 3, LOOP 1 ----//
+Current floor: 2...
+
+//---------- FLOOR 1 VALUES ----------//
+Passengers residing (no destination): 1
+Passengers waiting for UP service: 6
+    Destination of passenger 1: 2
+    Destination of passenger 2: 7
+    Destination of passenger 3: 7
+    Destination of passenger 4: 7
+    Destination of passenger 5: 6
+    Destination of passenger 6: 6
+Passengers waiting for DOWN service: 0
+
+
+//---------- FLOOR 2 VALUES ----------//
+Passenger residing (no destination): 4
+Passengers waiting for UP service: 0
+Passenger waiting for DOWN service: 1
+    Destination of passenger 1: 1
+
+
+//---------- FLOOR 3 VALUES ----------//
+Passengers residing (no destination): 3
+Passengers waiting for UP service: 2
+    Destination of passenger 1: 5
+    Destination of passenger 2: 4
+Passengers waiting for DOWN service: 2
+    Destination of passenger 1: 1
+    Destination of passenger 2: 2
+
+
+//---------- FLOOR 4 VALUES ----------//
+Passenger residing (no destination): 5
+Passenger waiting for UP service: 1
+    Destination of passenger 1: 5
+Passenger waiting for DOWN service: 1
+    Destination of passenger 1: 1
+
+
+//---------- FLOOR 5 VALUES ----------//
+Passengers residing (no destination): 0
+Passengers waiting for UP service: 2
+    Destination of passenger 1: 6
+    Destination of passenger 2: 6
+Passengers waiting for DOWN service: 5
+    Destination of passenger 1: 2
+    Destination of passenger 2: 1
+    Destination of passenger 3: 3
+    Destination of passenger 4: 3
+    Destination of passenger 5: 2
+
+
+//---------- FLOOR 6 VALUES ----------//
+Passengers residing (no destination): 4
+Passengers waiting for UP service: 0
+Passengers waiting for DOWN service: 3
+    Destination of passenger 1: 1
+    Destination of passenger 2: 2
+    Destination of passenger 3: 4
+
+
+//---------- FLOOR 7 VALUES ----------//
+Passenger residing (no destination): 6
+Passengers waiting for UP service: 0
+Passenger waiting for DOWN service: 1
+    Destination of passenger 1: 3
+
+
+//-------- ELEVATOR 1 VALUES --------//
+Standing on floor: 2
+Passenger on board: 1
+
+//-------- ELEVATOR 2 VALUES --------//
+Standing on floor: 2
+Passenger on board: 1
+
+//-------- ELEVATOR 3 VALUES --------//
+Standing on floor: 2
+Passengers on board: 0
+
+//-----------------------------------------------------------------
+
+//--- GENERATING ARRIVALS, FLOOR 1 ---//
+Residing passengers that leave: 1
+Number of passengers destined up: 1
+Number of passengers destined down: 0
+
+
+//--- GENERATING ARRIVALS, FLOOR 2 ---//
+Residing passengers that leave: 4
+Number of passengers destined up: 3
+Number of passengers destined down: 1
+
+
+//--- GENERATING ARRIVALS, FLOOR 3 ---//
+Residing passengers that leave: 3
+Number of passengers destined up: 2
+Number of passengers destined down: 1
+
+
+//--- GENERATING ARRIVALS, FLOOR 4 ---//
+Residing passengers that leave: 5
+Number of passengers destined up: 2
+Number of passengers destined down: 3
+
+
+//--- GENERATING ARRIVALS, FLOOR 5 ---//
+Residing passengers that leave: 0
+Number of passengers destined up: 0
+Number of passengers destined down: 0
+
+
+//--- GENERATING ARRIVALS, FLOOR 6 ---//
+Residing passengers that leave: 2
+Number of passengers destined up: 0
+Number of passengers destined down: 2
+
+
+//--- GENERATING ARRIVALS, FLOOR 7 ---//
+Residing passengers that leave: 3
+Number of passengers destined up: 0
+Number of passengers destined down: 3
+
+
+//-----------------------------------------------------------------
+
+//----- MOVING ELEVATOR 1, LOOP 2 ----//
+Current floor: 3...
+Stopping on floor 3...
+Currently 1 passenger on board.
+Unloading 1 passenger...
+Loading 2 passengers...
+
+//----- MOVING ELEVATOR 2, LOOP 2 ----//
+Current floor: 3...
+Stopping on floor 3...
+Currently 1 passenger on board.
+Unloading 1 passenger...
+
+//----- MOVING ELEVATOR 3, LOOP 2 ----//
+Current floor: 3...
+Stopping on floor 3...
+Currently 0 passengers on board.
+Loading 2 passengers...
+
+//---------- FLOOR 1 VALUES ----------//
+Passengers residing (no destination): 0
+Passengers waiting for UP service: 7
+    Destination of passenger 1: 2
+    Destination of passenger 2: 7
+    Destination of passenger 3: 7
+    Destination of passenger 4: 7
+    Destination of passenger 5: 6
+    Destination of passenger 6: 6
+    Destination of passenger 7: 3
+Passengers waiting for DOWN service: 0
+
+
+//---------- FLOOR 2 VALUES ----------//
+Passengers residing (no destination): 0
+Passengers waiting for UP service: 3
+    Destination of passenger 1: 4
+    Destination of passenger 2: 6
+    Destination of passenger 3: 3
+Passengers waiting for DOWN service: 2
+    Destination of passenger 1: 1
+    Destination of passenger 2: 1
+
+
+//---------- FLOOR 3 VALUES ----------//
+Passengers residing (no destination): 2
+Passengers waiting for UP service: 0
+Passengers waiting for DOWN service: 3
+    Destination of passenger 1: 1
+    Destination of passenger 2: 2
+    Destination of passenger 3: 2
+
+
+//---------- FLOOR 4 VALUES ----------//
+Passengers residing (no destination): 0
+Passengers waiting for UP service: 3
+    Destination of passenger 1: 5
+    Destination of passenger 2: 5
+    Destination of passenger 3: 5
+Passengers waiting for DOWN service: 4
+    Destination of passenger 1: 1
+    Destination of passenger 2: 2
+    Destination of passenger 3: 2
+    Destination of passenger 4: 1
+
+
+//---------- FLOOR 5 VALUES ----------//
+Passengers residing (no destination): 0
+Passengers waiting for UP service: 2
+    Destination of passenger 1: 6
+    Destination of passenger 2: 6
+Passengers waiting for DOWN service: 5
+    Destination of passenger 1: 2
+    Destination of passenger 2: 1
+    Destination of passenger 3: 3
+    Destination of passenger 4: 3
+    Destination of passenger 5: 2
+
+
+//---------- FLOOR 6 VALUES ----------//
+Passengers residing (no destination): 2
+Passengers waiting for UP service: 0
+Passengers waiting for DOWN service: 5
+    Destination of passenger 1: 1
+    Destination of passenger 2: 2
+    Destination of passenger 3: 4
+    Destination of passenger 4: 4
+    Destination of passenger 5: 4
+
+
+//---------- FLOOR 7 VALUES ----------//
+Passengers residing (no destination): 3
+Passengers waiting for UP service: 0
+Passengers waiting for DOWN service: 4
+    Destination of passenger 1: 3
+    Destination of passenger 2: 2
+    Destination of passenger 3: 5
+    Destination of passenger 4: 2
+
+
+//-------- ELEVATOR 1 VALUES --------//
+Standing on floor: 3
+Passengers on board: 2
+
+//-------- ELEVATOR 2 VALUES --------//
+Standing on floor: 3
+Passengers on board: 0
+
+//-------- ELEVATOR 3 VALUES --------//
+Standing on floor: 3
+Passengers on board: 2
+
+//-----------------------------------------------------------------
+
+//--- GENERATING ARRIVALS, FLOOR 1 ---//
+Residing passengers that leave: 0
+Number of passengers destined up: 0
+Number of passengers destined down: 0
+
+
+//--- GENERATING ARRIVALS, FLOOR 2 ---//
+Residing passengers that leave: 0
+Number of passengers destined up: 0
+Number of passengers destined down: 0
+
+
+//--- GENERATING ARRIVALS, FLOOR 3 ---//
+Residing passengers that leave: 1
+Number of passengers destined up: 0
+Number of passengers destined down: 1
+
+
+//--- GENERATING ARRIVALS, FLOOR 4 ---//
+Residing passengers that leave: 0
+Number of passengers destined up: 0
+Number of passengers destined down: 0
+
+
+//--- GENERATING ARRIVALS, FLOOR 5 ---//
+Residing passengers that leave: 0
+Number of passengers destined up: 0
+Number of passengers destined down: 0
+
+
+//--- GENERATING ARRIVALS, FLOOR 6 ---//
+Residing passengers that leave: 2
+Number of passengers destined up: 0
+Number of passengers destined down: 2
+
+
+//--- GENERATING ARRIVALS, FLOOR 7 ---//
+Residing passengers that leave: 3
+Number of passengers destined up: 0
+Number of passengers destined down: 3
+
+
+//-----------------------------------------------------------------
+
+//----- MOVING ELEVATOR 1, LOOP 3 ----//
+Current floor: 4...
+
+//----- MOVING ELEVATOR 2, LOOP 3 ----//
+Current floor: 4...
+Stopping on floor 4...
+Currently 0 passengers on board.
+Loading 1 passenger...
+
+//----- MOVING ELEVATOR 3, LOOP 3 ----//
+Current floor: 4...
+Stopping on floor 4...
+Currently 2 passengers on board.
+Unloading 1 passenger...
+Loading 2 passengers...
+
+//---------- FLOOR 1 VALUES ----------//
+Passengers residing (no destination): 0
+Passengers waiting for UP service: 7
+    Destination of passenger 1: 2
+    Destination of passenger 2: 7
+    Destination of passenger 3: 7
+    Destination of passenger 4: 7
+    Destination of passenger 5: 6
+    Destination of passenger 6: 6
+    Destination of passenger 7: 3
+Passengers waiting for DOWN service: 0
+
+
+//---------- FLOOR 2 VALUES ----------//
+Passengers residing (no destination): 0
+Passengers waiting for UP service: 3
+    Destination of passenger 1: 4
+    Destination of passenger 2: 6
+    Destination of passenger 3: 3
+Passengers waiting for DOWN service: 2
+    Destination of passenger 1: 1
+    Destination of passenger 2: 1
+
+
+//---------- FLOOR 3 VALUES ----------//
+Passengers residing (no destination): 1
+Passengers waiting for UP service: 0
+Passengers waiting for DOWN service: 4
+    Destination of passenger 1: 1
+    Destination of passenger 2: 2
+    Destination of passenger 3: 2
+    Destination of passenger 4: 2
+
+
+//---------- FLOOR 4 VALUES ----------//
+Passengers residing (no destination): 1
+Passengers waiting for UP service: 0
+Passengers waiting for DOWN service: 4
+    Destination of passenger 1: 1
+    Destination of passenger 2: 2
+    Destination of passenger 3: 2
+    Destination of passenger 4: 1
+
+
+//---------- FLOOR 5 VALUES ----------//
+Passengers residing (no destination): 0
+Passengers waiting for UP service: 2
+    Destination of passenger 1: 6
+    Destination of passenger 2: 6
+Passengers waiting for DOWN service: 5
+    Destination of passenger 1: 2
+    Destination of passenger 2: 1
+    Destination of passenger 3: 3
+    Destination of passenger 4: 3
+    Destination of passenger 5: 2
+
+
+//---------- FLOOR 6 VALUES ----------//
+Passengers residing (no destination): 0
+Passengers waiting for UP service: 0
+Passengers waiting for DOWN service: 7
+    Destination of passenger 1: 1
+    Destination of passenger 2: 2
+    Destination of passenger 3: 4
+    Destination of passenger 4: 4
+    Destination of passenger 5: 4
+    Destination of passenger 6: 1
+    Destination of passenger 7: 1
+
+
+//---------- FLOOR 7 VALUES ----------//
+Passengers residing (no destination): 0
+Passengers waiting for UP service: 0
+Passengers waiting for DOWN service: 7
+    Destination of passenger 1: 3
+    Destination of passenger 2: 2
+    Destination of passenger 3: 5
+    Destination of passenger 4: 2
+    Destination of passenger 5: 4
+    Destination of passenger 6: 1
+    Destination of passenger 7: 4
+
+
+//-------- ELEVATOR 1 VALUES --------//
+Standing on floor: 4
+Passengers on board: 2
+
+//-------- ELEVATOR 2 VALUES --------//
+Standing on floor: 4
+Passenger on board: 1
+
+//-------- ELEVATOR 3 VALUES --------//
+Standing on floor: 4
+Passenger on board: 1
+
+//-----------------------------------------------------------------
+
+//--- GENERATING ARRIVALS, FLOOR 1 ---//
+Residing passengers that leave: 0
+Number of passengers destined up: 0
+Number of passengers destined down: 0
+
+
+//--- GENERATING ARRIVALS, FLOOR 2 ---//
+Residing passengers that leave: 0
+Number of passengers destined up: 0
+Number of passengers destined down: 0
+
+
+//--- GENERATING ARRIVALS, FLOOR 3 ---//
+Residing passengers that leave: 1
+Number of passengers destined up: 0
+Number of passengers destined down: 1
+
+
+//--- GENERATING ARRIVALS, FLOOR 4 ---//
+Residing passengers that leave: 1
+Number of passengers destined up: 0
+Number of passengers destined down: 1
+
+
+//--- GENERATING ARRIVALS, FLOOR 5 ---//
+Residing passengers that leave: 0
+Number of passengers destined up: 0
+Number of passengers destined down: 0
+
+
+//--- GENERATING ARRIVALS, FLOOR 6 ---//
+Residing passengers that leave: 0
+Number of passengers destined up: 0
+Number of passengers destined down: 0
+
+
+//--- GENERATING ARRIVALS, FLOOR 7 ---//
+Residing passengers that leave: 0
+Number of passengers destined up: 0
+Number of passengers destined down: 0
+
+
+//-----------------------------------------------------------------
+
+//----- MOVING ELEVATOR 1, LOOP 4 ----//
+Current floor: 5...
+Stopping on floor 5...
+Currently 2 passengers on board.
+Unloading 1 passenger...
+
+//----- MOVING ELEVATOR 2, LOOP 4 ----//
+Current floor: 5...
+Stopping on floor 5...
+Currently 1 passenger on board.
+Unloading 1 passenger...
+Loading 1 passenger...
+
+//----- MOVING ELEVATOR 3, LOOP 4 ----//
+Current floor: 5...
+Stopping on floor 5...
+Currently 1 passenger on board.
+Unloading 1 passenger...
+Loading 1 passenger...
+
+//---------- FLOOR 1 VALUES ----------//
+Passengers residing (no destination): 0
+Passengers waiting for UP service: 7
+    Destination of passenger 1: 2
+    Destination of passenger 2: 7
+    Destination of passenger 3: 7
+    Destination of passenger 4: 7
+    Destination of passenger 5: 6
+    Destination of passenger 6: 6
+    Destination of passenger 7: 3
+Passengers waiting for DOWN service: 0
+
+
+//---------- FLOOR 2 VALUES ----------//
+Passengers residing (no destination): 0
+Passengers waiting for UP service: 3
+    Destination of passenger 1: 4
+    Destination of passenger 2: 6
+    Destination of passenger 3: 3
+Passengers waiting for DOWN service: 2
+    Destination of passenger 1: 1
+    Destination of passenger 2: 1
+
+
+//---------- FLOOR 3 VALUES ----------//
+Passengers residing (no destination): 0
+Passengers waiting for UP service: 0
+Passengers waiting for DOWN service: 5
+    Destination of passenger 1: 1
+    Destination of passenger 2: 2
+    Destination of passenger 3: 2
+    Destination of passenger 4: 2
+    Destination of passenger 5: 2
+
+
+//---------- FLOOR 4 VALUES ----------//
+Passengers residing (no destination): 0
+Passengers waiting for UP service: 0
+Passengers waiting for DOWN service: 5
+    Destination of passenger 1: 1
+    Destination of passenger 2: 2
+    Destination of passenger 3: 2
+    Destination of passenger 4: 1
+    Destination of passenger 5: 1
+
+
+//---------- FLOOR 5 VALUES ----------//
+Passengers residing (no destination): 3
+Passengers waiting for UP service: 0
+Passengers waiting for DOWN service: 5
+    Destination of passenger 1: 2
+    Destination of passenger 2: 1
+    Destination of passenger 3: 3
+    Destination of passenger 4: 3
+    Destination of passenger 5: 2
+
+
+//---------- FLOOR 6 VALUES ----------//
+Passengers residing (no destination): 0
+Passengers waiting for UP service: 0
+Passengers waiting for DOWN service: 7
+    Destination of passenger 1: 1
+    Destination of passenger 2: 2
+    Destination of passenger 3: 4
+    Destination of passenger 4: 4
+    Destination of passenger 5: 4
+    Destination of passenger 6: 1
+    Destination of passenger 7: 1
+
+
+//---------- FLOOR 7 VALUES ----------//
+Passengers residing (no destination): 0
+Passengers waiting for UP service: 0
+Passengers waiting for DOWN service: 7
+    Destination of passenger 1: 3
+    Destination of passenger 2: 2
+    Destination of passenger 3: 5
+    Destination of passenger 4: 2
+    Destination of passenger 5: 4
+    Destination of passenger 6: 1
+    Destination of passenger 7: 4
+
+
+//-------- ELEVATOR 1 VALUES --------//
+Standing on floor: 5
+Passenger on board: 1
+
+//-------- ELEVATOR 2 VALUES --------//
+Standing on floor: 5
+Passenger on board: 1
+
+//-------- ELEVATOR 3 VALUES --------//
+Standing on floor: 5
+Passenger on board: 1

@@ -1,0 +1,88 @@
+<project name="hw4-build" default="build-jar">
+
+    <property file="hw4-build.properties"/>
+    
+    <!-- Assigns short names to special directories -->
+    <property name="build.dir" value="${src.dir}/build"/>
+    <property name="classes.dir" value="${build.dir}/classes"/>
+    <property name="report.dir" value="${build.dir}/junitreport"/>
+
+    <!-- Assigns junit-classpath to the location of the junit jar -->
+    <path id="junit-classpath">
+        <pathelement location="junit-4.11.jar" />
+    </path>
+
+    <!-- Compiles all the Java source code in the application -->
+    <target name="compile">
+        <mkdir dir="${classes.dir}"/>
+
+        <javac srcdir="${src.dir}" destdir="${classes.dir}" 
+            includeantruntime="false" target="1.7">
+            <classpath refid="junit-classpath" />
+            <exclude name="**/package-info.*" />
+        </javac>
+    </target>
+
+    <!-- Builds the hw4 jar file including junit libraries and text files -->
+    <target name="build-jar" depends="compile">
+        <jar destfile="hw4.jar">
+            <fileset dir="${classes.dir}" />
+            <fileset dir="${src.dir}" includes="**/*.txt" />
+            <fileset dir="lib" />
+            <manifest>
+                <attribute name="Server" value="cscie55.hw4.Server"/>
+                <attribute name="Client" value="cscie55.hw4.Client"/>
+                <attribute name="AccountTest" value="cscie55.hw4.tests.AccountTest"/>
+                <attribute name="ATMImplementationTest" value="cscie55.hw4.tests.ATMImplementationTest"/>
+                <attribute name="ATMProxyTest" value="cscie55.hw4.tests.ATMProxyTest"/>
+            </manifest>
+        </jar>
+    </target>
+
+    <!-- Assigns main-classpath to the location of hw4.jar -->
+    <path id="main-classpath">
+        <pathelement location="hw4.jar" />
+    </path>
+
+    <!-- Runs the server, for testing purposes -->
+    <target name="run-server" depends="build-jar">
+        <java classname="cscie55.hw4.Server">
+            <arg value="${server.port}"/>
+            <classpath refid="main-classpath" />
+        </java>
+    </target>
+
+    <!-- Assigns classes-classpath to the classes directory -->
+    <path id="classes-classpath">
+        <pathelement path="${classes.dir}" />
+    </path>
+
+    <!-- Runs the jUnit tests -->
+    <target name="run-tests" depends="build-jar"> 
+        <mkdir dir="${report.dir}"/>
+        <junit printsummary="yes">
+            <classpath refid="main-classpath" />
+            <formatter type="xml"/>
+            <!-- Executes AccountTest and ATMImplementationTest -->
+            <batchtest fork="yes" todir="${report.dir}">
+                <fileset dir="${classes.dir}">
+                    <include name="**/AccountTest.class"/>
+                    <include name="**/ATMImplementationTest.class"/>
+                </fileset>
+            </batchtest>
+        </junit>
+        <!-- Executes ATMProxyTest passing its arguments to the main -->
+        <java classname="cscie55.hw4.tests.ATMProxyTest">
+            <arg value="${server.host}"/>
+            <arg value="${server.port}"/>
+            <classpath refid="classes-classpath" />
+            <classpath refid="junit-classpath" />
+        </java>
+    </target>
+
+    <!-- Deletes the build directory -->
+    <target name="clean">
+        <delete dir="cscie55/hw4/build"/> 
+    </target>
+
+</project>

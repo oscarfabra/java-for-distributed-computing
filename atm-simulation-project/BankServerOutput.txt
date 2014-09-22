@@ -1,0 +1,4 @@
+Security manager installed.
+Java RMI registry created.
+Bank bound in registry.
+Security bound in registry.
