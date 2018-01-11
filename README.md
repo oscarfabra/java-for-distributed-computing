@@ -1,7 +1,7 @@
 Java for Distributed Computing
 ==============================
 
-Description: Solutions to problems based on Harvard's "Java for Distributed Computing" Course.
+Description: Solutions to problems based on Harvard's "Java for Distributed Computing" Course. </br>
 Author: Oscar Fabra, oscarfabra@gmail.com
 
 <b>About:</b>
